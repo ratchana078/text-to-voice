@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text to Voice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗣 Text to Voice</h1>
+    <input type="text" id="text" placeholder="Enter the text" />
+    <br />
+    <button onclick="speak()">Speak</button>
+  </div>
+<script>
+    function speak() {
+      const input = document.getElementById("text").value;
+      const utterance = new SpeechSynthesisUtterance(input);
+      speechSynthesis.speak(utterance);
+    }
+  </script>
+
+
+<header class="top-header">
+  <div class="header-inner">
+    <div class="logo">🗣</div>
+    <div class="header-text">
+      <h1>If you want.. I can create</h1>
+      <p class="subtitle">Convert text to premium voice — clear smooth and professional
+        
+      </p>
+    </div>
+   
+  </div>
+</header>
+
+<!-- --- Your existing card should have id="input-card" so 'Try Now' scrolls to it --- -->
